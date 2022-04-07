@@ -1,3 +1,4 @@
+from torch import true_divide
 from chatbot import chatbot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 
@@ -19,7 +20,5 @@ trainer.train(
 def brain(user_input):
     response = chatbot.get_response(user_input)
     return response
-
-
 
 
